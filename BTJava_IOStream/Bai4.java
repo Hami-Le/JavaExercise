@@ -25,7 +25,6 @@ public class Bai4 {
             System.out.println("Lỗi khi ghi file: " + e.getMessage());
         }
 
-        // Đọc số nguyên từ file
         try (DataInputStream dis = new DataInputStream(new FileInputStream(fileName))) {
             System.out.print("Các số nguyên trong " + fileName + ": ");
             while (dis.available() > 0) {
