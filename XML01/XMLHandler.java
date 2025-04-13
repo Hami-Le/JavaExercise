@@ -9,7 +9,6 @@ public class XMLHandler {
 
     private static final String FILE_PATH = "students.xml";
 
-    // Đọc XML
     public static void readXML() throws Exception {
         File file = new File(FILE_PATH);
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -24,7 +23,6 @@ public class XMLHandler {
         }
     }
 
-    // Ghi (thêm mới)
     public static void writeXML(String id, String name) throws Exception {
         File file = new File(FILE_PATH);
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -45,7 +43,6 @@ public class XMLHandler {
         saveXML(doc);
     }
 
-    // Xóa
     public static void deleteStudentById(String id) throws Exception {
         File file = new File(FILE_PATH);
         DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
@@ -63,7 +60,6 @@ public class XMLHandler {
         saveXML(doc);
     }
 
-    // Lưu file
     private static void saveXML(Document doc) throws Exception {
         Transformer t = TransformerFactory.newInstance().newTransformer();
         t.setOutputProperty(OutputKeys.INDENT, "yes");
