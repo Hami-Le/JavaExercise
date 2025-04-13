@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Ex2;
 
 import java.util.logging.Level;
@@ -31,7 +27,7 @@ class Thread1 extends Thread{
 
 class Thread2 extends Thread{
     public void run() {
-        synchronized (Resource.r1) {  // sửa lỗi bằng cách để đúng thứ tự, không để ngược nhau
+        synchronized (Resource.r1) { 
             System.out.println("Thread2 đã khóa r1");
 
             try {
