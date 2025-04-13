@@ -13,7 +13,13 @@ public class Class {
         this.numberOfCredits = numberOfCredits;
     }
 
-    public String getClassID() { return classID; }
-    public String getDescription() { return description; }
-    public int getNumberOfCredits() { return numberOfCredits; }
+    public String getClassID() { 
+        return classID; 
+    }
+    public String getDescription() { 
+        return description; 
+    }
+    public int getNumberOfCredits() { 
+        return numberOfCredits; 
+    }
 }
