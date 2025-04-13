@@ -42,7 +42,6 @@ public class GUI extends JFrame {
         add(panel, BorderLayout.NORTH);
         add(new JScrollPane(outputArea), BorderLayout.CENTER);
 
-        // Action: Đăng ký
         registerButton.addActionListener(e -> {
             String user = usernameField.getText();
             String pass = new String(passwordField.getPassword());
@@ -56,7 +55,6 @@ public class GUI extends JFrame {
             showMessage(success ? "Đăng ký thành công!" : "Tên đăng nhập đã tồn tại.");
         });
 
-        // Action: Đăng nhập
         loginButton.addActionListener(e -> {
             String user = usernameField.getText();
             String pass = new String(passwordField.getPassword());
@@ -65,7 +63,6 @@ public class GUI extends JFrame {
             showMessage(success ? "Đăng nhập thành công!" : "Sai thông tin đăng nhập.");
         });
 
-        // Action: Xuất XML
         exportButton.addActionListener(e -> {
             JFileChooser fc = new JFileChooser();
             if (fc.showSaveDialog(this) == JFileChooser.APPROVE_OPTION) {
@@ -75,7 +72,6 @@ public class GUI extends JFrame {
             }
         });
 
-        // Action: Nhập XML
         importButton.addActionListener(e -> {
             JFileChooser fc = new JFileChooser();
             if (fc.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
