@@ -9,7 +9,13 @@ public class Learn {
         this.classID = classID;
     }
 
-    public int getLearnID() { return learnID; }
-    public String getStudentID() { return studentID; }
-    public String getClassID() { return classID; }
+    public int getLearnID() { 
+        return learnID; 
+    }
+    public String getStudentID() { 
+        return studentID; 
+    }
+    public String getClassID() { 
+        return classID; 
+    }
 }
