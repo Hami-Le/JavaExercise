@@ -1,4 +1,3 @@
-package xmlcrud;
 
 import org.w3c.dom.*;
 import javax.xml.parsers.*;
@@ -10,7 +9,6 @@ import java.io.File;
 public class XMLHandler {
     private static final String FILE_PATH = "students.xml";
 
-    // Tạo mới file XML nếu chưa có
     public static void createXMLFile() throws Exception {
         File file = new File(FILE_PATH);
         if (file.exists()) return;
@@ -25,7 +23,6 @@ public class XMLHandler {
         saveXML(doc);
     }
 
-    // Thêm student mới
     public static void addStudent(String id, String name) throws Exception {
         Document doc = getDocument();
 
@@ -40,7 +37,6 @@ public class XMLHandler {
         saveXML(doc);
     }
 
-    // Xóa student theo ID
     public static void deleteStudent(String id) throws Exception {
         Document doc = getDocument();
 
@@ -56,7 +52,6 @@ public class XMLHandler {
         saveXML(doc);
     }
 
-    // Cập nhật tên student
     public static void updateStudent(String id, String newName) throws Exception {
         Document doc = getDocument();
 
@@ -72,7 +67,6 @@ public class XMLHandler {
         saveXML(doc);
     }
 
-    // Hiển thị tất cả student
     public static void displayAll() throws Exception {
         Document doc = getDocument();
 
@@ -85,7 +79,6 @@ public class XMLHandler {
         }
     }
 
-    // Helpers
     private static Document getDocument() throws Exception {
         File file = new File(FILE_PATH);
         DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
