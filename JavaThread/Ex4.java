@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Ex4;
 
 import java.util.logging.Level;
@@ -10,13 +6,13 @@ import java.util.logging.Logger;
 class Thread1 extends Thread {
 
     public void run() {
-        while (!Thread.currentThread().isInterrupted()) { // Kiểm tra tín hiệu gián đoạn
+        while (!Thread.currentThread().isInterrupted()) {
             System.out.println("Luồng đang chạy...");
             try {
-                Thread.sleep(500); // Tạm dừng để tránh CPU chạy 100%
+                Thread.sleep(500); 
             } catch (InterruptedException e) {
                 System.out.println("Luồng bị gián đoạn!");
-                break; // Thoát khỏi vòng lặp
+                break; 
             }
         }
         System.out.println("Luồng đã dừng.");
