@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<students>
+        
+    <student id="1">
+                
+        <name>Le Ha Mi</name>
+            
+    </student>
+        
+    <student id="2">
+                
+        <name>Bui Ha My</name>
+            
+    </student>
+    
+    <student id="3">
+        <name>Dang Tieu Phuong</name>
+    </student>
+</students>
