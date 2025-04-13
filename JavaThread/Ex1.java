@@ -1,15 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Ex1;
 
 class TaskA {
 
     private int count = 0;
 
-    public synchronized void increment() { // một luồng có thể thực thi phương thức này tại một thời điểm.
-        count++;                          // Điều này giúp tránh xung đột khi hai luồng cùng tăng count đồng thời.
+    public synchronized void increment() { 
+        count++;                          
     }
 
     public int getCount() {
