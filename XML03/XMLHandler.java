@@ -9,7 +9,6 @@ import java.util.List;
 
 public class XMLHandler {
 
-    // Export danh sách user (trừ mật khẩu) ra XML
     public static void exportUsersToXML(List<User> users, String filePath) {
         try {
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -41,7 +40,6 @@ public class XMLHandler {
         }
     }
 
-    // Import user từ XML (gồm username và passwordHash)
     public static List<User> importUsersFromXML(String filePath) throws Exception {
         List<User> userList = new ArrayList<>();
 
