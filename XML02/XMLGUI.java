@@ -36,7 +36,6 @@ public class XMLGUI extends JFrame {
         add(btnMerge);
         add(new JScrollPane(textArea));
 
-        // Khởi tạo XML nếu chưa có
         try {
             XMLHandler.createXMLFile();
         } catch (Exception e) {
