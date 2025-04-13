@@ -20,7 +20,7 @@ public class Bai2 {
             while (true) {
                 String line = sc.nextLine();
                 if (line.equalsIgnoreCase("exit")) {
-                    break; // Kết thúc nhập và quay lại menu
+                    break; 
                 }
                 writer.write(line);
                 writer.newLine();
