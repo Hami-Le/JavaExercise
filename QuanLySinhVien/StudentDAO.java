@@ -1,5 +1,3 @@
-package dao;
-
 import model.Student;
 import java.sql.*;
 import java.util.ArrayList;
