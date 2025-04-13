@@ -22,7 +22,7 @@ class FileReadTask implements Callable<byte[]> {
     public byte[] call() {
         byte[] buffer = new byte[size];
         try (RandomAccessFile file = new RandomAccessFile(fileName, "r")) {
-            file.seek(start); // Di chuyển con trỏ đến vị trí cần đọc
+            file.seek(start); 
             file.readFully(buffer);
         } catch (IOException e) {
             e.printStackTrace();
