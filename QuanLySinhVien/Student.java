@@ -22,19 +22,31 @@ public class Student {
         return lastName + initials + "@vku.udn.vn";
     }
 
-    public String getStudentID() { return studentID; }
-    public void setStudentID(String studentID) { this.studentID = studentID; }
+    public String getStudentID() { 
+        return studentID; 
+    }
+    public void setStudentID(String studentID) { 
+        this.studentID = studentID; 
+    }
 
-    public String getName() { return name; }
+    public String getName() { 
+        return name; 
+    }
     public void setName(String name) {
         this.name = name;
         this.email = generateEmail(name); 
     }
 
-    public int getAge() { return age; }
-    public void setAge(int age) { this.age = age; }
+    public int getAge() { 
+        return age; 
+    }
+    public void setAge(int age) { 
+        this.age = age; 
+    }
 
-    public String getEmail() { return email; }
+    public String getEmail() { 
+        return email; 
+    }
 
     @Override
     public String toString() {
